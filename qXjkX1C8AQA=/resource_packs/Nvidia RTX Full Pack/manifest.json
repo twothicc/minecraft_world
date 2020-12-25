@@ -1,0 +1,20 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "pack.description",
+        "name": "pack.name",
+        "uuid": "092dc817-93a6-4708-873d-b54bc01686ef",
+        "version": [0, 0, 1],
+        "min_engine_version": [1, 15, 0]
+    },
+    "modules": [
+        {
+            "type": "resources",
+            "uuid": "71fa5fcc-a5e4-4555-839c-aaeb321b2ad6",
+            "version": [0, 0, 1]
+        }
+	],
+    "capabilities" : [
+            "raytraced"
+    ]			
+}
