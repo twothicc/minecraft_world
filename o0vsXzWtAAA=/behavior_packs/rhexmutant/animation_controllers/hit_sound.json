@@ -1,0 +1,26 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.hit_sound": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "hit_sound": "query.is_sheared"
+            }
+          ]
+        },
+        "hit_sound": {
+          "transitions": [
+            {
+              "default": "!query.is_sheared"
+            }
+          ],
+          "on_entry": [
+            "/playsound random.glass @a ~ ~ ~"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+	    "animation.Fangs_mutant.spin": {
+			"loop": true,
+			"animation_length": 1.04,
+			"bones": {
+				"Head": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.04": [0, 360, 0]
+					}
+				},
+				"Jaw": {
+					"rotation": [0, 0, -90]
+				},
+				"Jaw2": {
+					"rotation": [0, 0, 90]
+				},
+				"Jaw3": {
+					"rotation": [90, 0, 0]
+				},
+				"Jaw4": {
+					"rotation": [-90, 0, 0]
+				}
+			}
+		},
+		"animation.Fangs_mutant.bite": {
+			"animation_length": 100.04,
+			"bones": {
+				"Head": {
+					"rotation": {
+						"0.08": [0, 360, 0],
+						"0.68": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, -26, 0],
+						"0.52": [0, 0, 0]
+					},
+					"scale": {
+						"0.84": [1, 1, 1],
+						"1.04": [1, 0, 1]
+					}
+				},
+				"Jaw": {
+					"rotation": {
+						"0.44": [0, 0, -90],
+						"0.72": [0, 0, 0]
+					},
+					"scale": [1, 1.5, 1]
+				},
+				"Jaw2": {
+					"rotation": {
+						"0.44": [0, 0, 90],
+						"0.72": [0, 0, 0]
+					},
+					"scale": [1, 1.5, 1]
+				},
+				"Jaw3": {
+					"rotation": {
+						"0.44": [90, 0, 0],
+						"0.72": [0, 0, 0]
+					},
+					"scale": [1, 1.5, 1]
+				},
+				"Jaw4": {
+					"rotation": {
+						"0.44": [-90, 0, 0],
+						"0.72": [0, 0, 0]
+					},
+					"scale": [1, 1.5, 1]
+				}
+			}
+		}
+	}
+}

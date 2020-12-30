@@ -1,0 +1,85 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "rhex:iceball",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "runtime_identifier":"minecraft:snowball",
+      "scripts": {
+        "animate": [
+          "hit_sound"
+        ]
+      },
+      "animations": {
+        "hit_sound": "controller.animation.hit_sound"
+      }
+    },
+    "component_groups": {
+      "hit_sound": {
+        "minecraft:is_sheared":{ 
+           }
+        }
+     },
+    "components": {
+      "minecraft:collision_box": {
+        "width": 0.9,
+        "height": 0.9
+      },
+      "minecraft:scale": {
+        "value": 1.0
+      },
+      "minecraft:projectile": {
+        "on_hit": {
+        "mob_effect": {
+            "effect": "slowness",
+            "durationeasy": 6,
+            "durationnormal": 8,
+            "durationhard": 14,
+            "amplifier": 2
+          },
+          "impact_damage": {
+            "damage": 10,
+            "knockback": true
+          },
+        "definition_event": {
+          "affect_projectile": true,
+          "event_trigger": {
+            "event": "hit_sound",
+            "target": "self"
+          }
+        },
+          
+          "remove_on_hit": { },
+          "particle_on_hit": {
+            "particle_type": "snowballpoof",
+            "num_particles": 12,
+            "on_entity_hit": true,
+            "on_other_hit": true
+          }
+        },
+        "hit_sound": "glass",
+        "anchor": 1,
+        "power": 1.5,
+        "gravity": 0.12,
+        "angle_offset": 0.0,
+        "shouldbounce": true,
+        "offset": [ 0, -0.1, 0 ]
+      },
+	    "minecraft:physics": {
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      }
+    },
+  "events": {
+"hit_sound": {
+"add": {
+   "component_groups": [ "hit_sound" ]
+}
+}
+      }
+   }
+}

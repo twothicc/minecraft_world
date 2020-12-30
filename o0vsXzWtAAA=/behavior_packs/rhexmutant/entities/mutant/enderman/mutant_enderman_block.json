@@ -1,0 +1,136 @@
+{
+  "format_version": "1.12.0",
+ "minecraft:entity": {
+  "description": {
+    "identifier":"rhex:mutant_enderman_block",
+    "is_spawnable": false,
+    "is_summonable": true,
+    "is_experimental": false,
+    "runtime_identifier": "minecraft:snowball",
+    "scripts": {
+        "animate": [
+          { "block": "query.is_powered" }
+        ]
+      },
+      "animations": {
+        "block": "controller.animation.medown"
+      }
+    },
+  "component_groups": {
+  "grass":{
+"minecraft:variant": { "value": 0 
+}
+},
+"stone":{
+"minecraft:variant": { "value": 1 
+}
+},
+   "minecraft:exploding": {
+   "minecraft:is_charged": {
+        },
+    "minecraft:explode": {
+     "fuse_length": 0,
+     "fuse_lit": true,
+     "power": 0.5,
+     "causes_fire": false,
+         "breaks_blocks": true,
+     "fire_affected_by_griefing": true,
+     "destroy_affected_by_griefing": true
+    }
+   }
+  },
+
+  "components": {
+  
+        "minecraft:type_family": {
+        "family": [ "projectile", "block", "inanimate" ]
+      },
+   "minecraft:collision_box": {
+    "width": 0.8,
+    "height": 0.1.2
+   },
+   "minecraft:scale": {
+          "value": 1
+        },
+   "minecraft:projectile": {
+    "onHit": {
+                "mob_effect": {
+          "effect": "weakness",
+          "durationeasy": 3,
+          "durationnormal": 5,
+          "durationhard": 8,
+          "amplifier": 2
+      },
+      "impact_damage": {
+            "damage": [ 12, 16 ],
+            "knockback": true
+        },
+     "definition_event": {
+      "affect_projectile": true,
+      "event_trigger": {
+         "event": "minecraft:explode",
+          "target": "self"
+      }
+     }
+    },
+    "power": 1.5,
+    "gravity": 0.08,
+    "uncertainty_base": 0,
+    "anchor": 1,
+    "offset": [ 0.5, 0.1, 0 ]
+   },
+   "minecraft:timer": {
+          "looping": false,
+			"time": [0.0, 0.0],
+          "time_down_event": {
+          "event": "block"
+          }
+          },
+   "minecraft:physics": {
+   },
+   "minecraft:pushable": {
+    "is_pushable": true,
+    "is_pushable_by_piston": true
+   }
+  },
+  "events": {
+  "block": {
+  "randomize": [
+  {
+  "weight": 20,
+    "add": {
+     "component_groups": [
+      "grass"
+     ]
+    },
+    "remove": {
+     "component_groups": [
+      "stone"
+     ]
+    }
+   },
+   {
+   "weight": 19,
+    "add": {
+     "component_groups": [
+      "stone"
+     ]
+    },
+    "remove": {
+     "component_groups": [
+      "grass"
+     ]
+    }
+   }
+   ]
+   },
+   "minecraft:explode": {
+    "add": {
+     "component_groups": [
+      "minecraft:exploding"
+     ]
+    }
+   }
+  }
+ }
+}

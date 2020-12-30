@@ -1,0 +1,242 @@
+{
+  "format_version": "1.8.0",
+  "animation_controllers": {
+    "controller.animation.mz.look_at_target": {
+      "states": {
+        "default": {
+          "animations": [ { "mzlook_at_target": [] } ]
+        }
+      }
+    },
+    "controller.animation.mz.general": {
+      "states": {
+        "default": {
+          "animations": [
+            { "mzgeneral": [] }
+          ]
+        }
+      }
+    },
+    "controller.animation.mz.general2": {
+      "states": {
+        "default": {
+          "animations": [
+            { "mzgeneral2": [] }
+          ]
+        }
+      }
+    },
+    "controller.animation.mz.roar": {
+      "states": {
+        "default": {
+          "transitions": [
+            { "mzroar": "query.is_powered" }
+          ]
+        },
+        "mzroar": {
+          "animations": [
+            { "mzroar": [] }
+          ],
+          "transitions": [
+            { "default": "!query.is_powered" }
+          ]
+        }
+      }
+    },
+    "controller.animation.mz.attack": {
+      "states": {
+        "default": {
+          "transitions": [
+            { "mzattack": "query.is_sheared" }
+          ]
+        },
+        "mzattack": {
+          "animations": [
+            { "mzattack": [] }
+          ],
+          "transitions": [
+            { "default": "!query.is_sheared" }
+          ]
+        }
+      }
+    },
+    "controller.animation.mz.move": {
+      "states": {
+        "default": {
+          "transitions": [
+            { "mzmove": "query.modified_move_speed" }
+          ]
+        },
+        "mzmove": {
+          "animations": [
+            { "mzmove": [] }
+          ],
+          "transitions": [
+            { "default": "!query.modified_move_speed" }
+          ]
+        }
+      }
+    },
+    "controller.animation.titan.look_at_target": {
+      "states": {
+        "default": {
+          "animations": [ { "look_at_target": [] } ]
+        }
+      }
+    },
+    "controller.animation.mutant.general": {
+      "states": {
+        "default": {
+          "animations": [
+            { "general": [] }
+          ]
+        }
+      }
+    },
+    "controller.animation.titan.death": {
+      "states": {
+        "default": {
+          "animations": [
+            { "death": [] }
+          ]
+        }
+      }
+    },
+    "controller.animation.mutant.cast": {
+      "states": {
+        "default": {
+          "transitions": [
+            { "cast": "query.is_casting" }
+          ]
+        },
+        "cast": {
+          "animations": [
+            { "cast": [] }
+          ],
+          "transitions": [
+            { "default": "!query.is_casting" }
+          ]
+        }
+      }
+    },
+    "controller.animation.mutant.roaring": {
+      "states": {
+        "default": {
+          "transitions": [
+            { "roaring": "query.is_roaring == 1" }
+          ]
+        },
+        "roaring": {
+          "animations": [
+            { "roaring": [] }
+          ],
+          "transitions": [
+            { "default": "query.is_roaring != 1" }
+          ]
+        }
+      }
+    },
+    "controller.animation.mutant.has_target": {
+      "states": {
+        "default": {
+          "transitions": [
+            { "target": "query.has_target" }
+          ]
+        },
+        "target": {
+          "animations": [
+            { "target": [] }
+          ],
+          "transitions": [
+            { "default": "!query.has_target" }
+          ]
+        }
+      }
+    },
+    "controller.animation.mutant.chargiiing": {
+      "states": {
+        "default": {
+          "transitions": [
+            { "chargiiing": "query.is_charging" }
+          ]
+        },
+        "chargiiing": {
+          "animations": [
+            { "chargiiing": [] }
+          ],
+          "transitions": [
+            { "default": "!query.is_charging" }
+          ]
+        }
+      }
+    },
+    "controller.animation.mutant.hurt": {
+      "states": {
+        "default": {
+          "transitions": [
+            { "hurt": "query.is_powered" }
+          ]
+        },
+        "hurt": {
+          "animations": [
+            { "hurt": [] }
+          ],
+          "transitions": [
+            { "default": "!query.is_powered" }
+          ]
+        }
+      }
+    },
+    "controller.animation.mutant.jump": {
+      "states": {
+        "default": {
+          "transitions": [
+            { "jump": "query.is_stalking" }
+          ]
+        },
+        "jump": {
+          "animations": [
+            { "jump": [] }
+          ],
+          "transitions": [
+            { "default": "query.is_stalking" }
+          ]
+        }
+      }
+    },
+    "controller.animation.mutant.block": {
+      "states": {
+        "default": {
+          "transitions": [
+            { "block": "query.is_sheared" }
+          ]
+        },
+        "block": {
+          "animations": [
+            { "block": [] }
+          ],
+          "transitions": [
+            { "default": "!query.is_sheared" }
+          ]
+        }
+      }
+    },
+    "controller.animation.mutant.move": {
+      "states": {
+        "default": {
+          "parameters": [ "query.modified_move_speed" ],
+          "animations": [
+            {
+              "move": [
+                {
+                  "0.0": 0.0,
+                  "1.0": 1.0
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

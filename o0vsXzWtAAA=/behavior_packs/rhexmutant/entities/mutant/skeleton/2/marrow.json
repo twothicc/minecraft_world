@@ -1,0 +1,94 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "rhex:ms_arrow2",
+   "runtime_identifier": "minecraft:arrow",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+    "scripts": {
+        "animate": [
+          "spread"
+         
+        ]
+      },
+      "animations": {
+        "spread": "controller.animation.rainarrowsm"
+        
+      }
+    },
+"component_groups": {
+"sheared": {
+"minecraft:mob_effect": {
+          "effect_range": 6,
+          "mob_effect": "slowness",
+          "effect_time": 10,
+          "entity_filter": {
+            "all_of": [
+		    { "test": "is_family", "subject": "other", "operator": "!=", "value": "rhexstray" }
+		  ]
+        }
+        }
+        }
+      },
+
+    "components": {
+        "minecraft:scale": {
+          "value": 1.0
+        },
+
+      "minecraft:collision_box": {
+        "width": 1.0,
+        "height": 1.0
+      },
+      "minecraft:type_family": {
+        "family": [ "rmsarrow" ]
+      },
+      "minecraft:projectile": {
+        "onHit": {
+          "impact_damage": {
+            "damage": [ 12, 16 ],
+            "knockback": true,
+            "semirandomdiffdamage": false,
+            "destroyonhit": true
+          },
+          "spawn_chance": {
+            "first_spawn_chance": 1,
+            "second_spawn_chance": 9999,
+            "first_spawn_count": 1,
+            "second_spawn_count": 1,
+            "spawn_baby": false,
+            "spawn_definition": "rhex:msarrow_impact"
+          },
+          "remove_on_hit": {},
+          "stick_in_ground": {
+            "shake_time" : 0.35
+          },
+          "arrow_effect": {
+          }
+        },
+        "hitSound": "bow.hit",
+        "power": 3,
+        "gravity": 0.025,
+        "uncertaintyBase": 8,
+        "uncertaintyMultiplier": 2,
+        "anchor": 1,
+      "inertia": 1.0,
+      "liquid_inertia": 0.9,
+        "shouldbounce": true,
+        "offset": [ 0, -0.01, 0 ]
+      },
+	  "minecraft:physics": {
+      }
+    },
+"events": {
+      "sheared": {
+	    "add": { "component_groups": [
+ "sheared" 
+] 
+}
+      }
+    }
+  }
+}

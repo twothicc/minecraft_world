@@ -1,0 +1,21 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.mevoker.casting": {
+			"loop": true,
+			"bones": {
+				"arms": {
+					"scale": 0
+				},
+				"Arm": {
+					"rotation": ["-135+math.cos(query.life_time * 763.4) * 14.3239 - this", "-this", "-60- this"],
+					"scale": 1
+				},
+				"Arm3": {
+					"rotation": ["-130+math.cos(query.life_time * 763.4) * 14.3239 - this", "-this", "60- this"],
+					"scale": 1
+				}
+			}
+		}
+	}
+}

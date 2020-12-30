@@ -1,0 +1,36 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+	  "controller.animation.zomvie.smash" : {
+			"initial_state" : "default",
+			"states" : {
+				"casting" : {
+					"animations" : [ "nani1", "nina1" ],
+					"particle_effects" : [
+						{
+							"effect" : "spell",
+							"locator" : "hand"
+						},
+						{
+							"effect" : "spell",
+							"locator" : "hand2"
+						}
+					],
+					"transitions" : [
+						{
+							"default" : "!query.is_delayed_attacking"
+						}
+					]
+				},
+				"default" : {
+					"animations" : [ "nani1", "nina1" ],
+					"transitions" : [
+						{
+							"casting" : "query.is_delayed_attacking"
+						}
+					]
+				}
+			}
+		}
+  }
+}

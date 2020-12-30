@@ -1,0 +1,26 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.smbone": {
+      "arrays": {
+        "geometries": {
+          "Array.geos": [ 
+"Geometry.default",
+ "Geometry.default2",
+"Geometry.default3",
+ "Geometry.default4",
+"Geometry.default5",
+ "Geometry.default6",
+"Geometry.default7",
+ "Geometry.default8",
+"Geometry.default9",
+ "Geometry.default10" 
+]
+        }
+      },
+      "geometry": "Array.geos[query.variant]",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.default" ]
+    }
+  }
+}

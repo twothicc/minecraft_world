@@ -1,0 +1,68 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "rhex:mws_head",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+    "scripts": {
+        "animate": [
+          "clear"
+        ]
+      },
+      "animations": {
+        "clear": "controller.animation.bonetpms"
+      }
+    },
+
+    "component_groups": {
+"k":{
+    "minecraft:knockback_resistance": {"value": 0.5}}},
+    "components": {
+      "minecraft:collision_box": {
+        "width": 0.5,
+        "height": 0.25
+        },
+        "minecraft:scale": {
+        "value": 1.30
+      },
+      "minecraft:timer": {
+          "looping": false,
+			"time": [0, 0],
+          "time_down_event": {
+          "event": "root"
+          
+          }
+          },
+      "minecraft:physics": {
+      },
+      "minecraft:type_family": {
+        "family":["bone", "rhexwitherskeleton"]          
+      }
+    },
+
+    "events":{
+    "root": {
+        "randomize": [
+          {
+            "weight": 20,
+            "add": {
+              "component_groups": [
+                "k"
+              ]
+            }
+          },
+          {
+            "weight": 20,
+            "remove": {
+              "component_groups": [
+                "k"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

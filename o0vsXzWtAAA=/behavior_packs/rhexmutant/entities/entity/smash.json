@@ -1,0 +1,68 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "rhex:player_smash",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    
+	
+    "component_groups": {
+      "minecraft:despawn": {
+        "minecraft:type_family": { "family": [ "despawncito" ] }
+      }
+	},
+	
+    "components": {
+	  "minecraft:despawn": {
+	    "filters": {
+		  "all_of": [
+		    { "test": "is_family", "subject": "self", "value": "despawncito" }
+		  ]
+		}
+	  },
+      "minecraft:damage_sensor": [
+	    {
+          "cause": "all",
+          "deals_damage": false
+        }
+	  ],
+      "minecraft:behavior.knockback_roar": {
+        "priority": 1,
+        "duration": 0.1,
+        "attack_time": 0.1,
+        "knockback_damage": 1,
+        "knockback_strength": 2,
+        "knockback_range": 4,
+        "knockback_filters": {
+		  "all_of": [
+		    { "test": "is_family", "subject": "other", "operator": "!=", "value": "player" }
+		  ]
+        },
+        "on_roar_end": {
+          "event": "minecraft:event_despawn"
+        },
+        "damage_filters": {
+		  "all_of": [
+		    { "test": "is_family", "subject": "other", "operator": "!=", "value": "player" }
+		  ]
+        }
+      },
+      "minecraft:knockback_resistance": {
+        "value": 99.0
+      },
+      "minecraft:collision_box": {
+        "width": 0.25,
+        "height": 0.25
+      }
+    },
+	
+    "events": {
+      "minecraft:event_despawn": {
+	    "add": { "component_groups": [ "minecraft:despawn" ] }
+      }
+    }
+  }
+}

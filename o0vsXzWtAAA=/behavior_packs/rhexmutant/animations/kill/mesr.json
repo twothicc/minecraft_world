@@ -1,0 +1,15 @@
+{
+	"format_version" : "1.8.0",
+	"animations" : {
+		"animation.mesr" : {
+            "timeline": {
+              "0.0": "/tag @s add me",
+              "0.1": "/effect @e[tag=!me,r=10] nausea 6 255 true",
+              "3.43": "/weather clear",
+              "6.80": "/tag @s remove me"
+            },
+            "animation_length": 6.86,
+			"loop" : true
+		}
+	}
+}

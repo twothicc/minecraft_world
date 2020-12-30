@@ -1,0 +1,16 @@
+{
+	"format_version" : "1.8.0",
+	"animations" : {
+		"animation.explosion_mutant" : {
+            "timeline":{
+  "0.0":[
+  "/particle minecraft:huge_explosion_emitter ~ ~ ~",
+  "/playsound random.explode @a ~ ~ ~",
+  "@s mutated"
+  ]
+  },
+  "loop":false,
+  "animation_length": 0.1
+}
+}
+}

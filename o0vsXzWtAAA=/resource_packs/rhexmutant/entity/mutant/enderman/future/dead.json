@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "rhex:fmutant_enderman_dead",
+      "materials": {
+	    "default": "spider", "charged3": "charged_creeper"
+	  },
+      "textures": {
+        "default": "textures/entity/mutant/renderman",
+        "charged3": "textures/entity/mutant/endersoul"
+      },
+      "animations": {
+        "move": "animation.Enderman_mutant.dead",
+        "target": "animation.Enderman_mutant.has_target",
+        "root": "controller.animation.endermandead.effect"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.shake = query.shake_time - query.frame_alpha;",
+          "variable.shake_power = variable.shake > 0.0 ? -Math.sin(variable.shake * 200.0) * variable.shake : 0.0;"
+        ],
+        "animate": [
+          "move",
+          "target",
+          "root"
+        ]
+      },
+      "particle_effects": {
+        "effect": "rhex:enderman_dead_particle"
+      },
+      "geometry": {
+        "default": "geometry.Enderman_mutant",
+        "charged3": "geometry.Enderman_mutant_spike"
+      },
+      "render_controllers": [ "controller.render.iron_golem", "controller.render.creeper_armor3" ]
+    }
+  }
+}

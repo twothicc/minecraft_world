@@ -1,0 +1,36 @@
+{
+  "format_version": 1,
+  "header": {
+    "description": "I hope u enjoy!!! credit to jujustyle7....addon made by rhex",
+    "name": "rhex mutant creture",
+    "uuid": "5b6c4634-61e4-40e3-9e5a-d6856fc6dbf5",
+    "version": [
+      1,
+      8,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      8,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "I hope u enjoy!!! credit to jujustyle7....addon made by rhex",
+      "type": "data",
+      "uuid": "f4e3e32b-1f38-46b1-af7d-d9d76c1794ea",
+      "version": [
+        1,
+        8,
+        0
+      ]
+    }
+  ],
+  "dependencies" : [
+      {
+         "uuid" : "de2e7afb-17c0-457e-a2b2-d5c030cab08d",
+         "version" : [ 1, 8, 0 ]
+      }
+   ]
+}

@@ -1,0 +1,30 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "rhex:mutant_zombie_villager_dead",
+      "materials": {
+	    "default": "iron_golem"
+	  },
+      "textures": {
+        "default": "textures/entity/mutant/rzombie"
+      },
+      "animations": {
+        "move": "animation.Zombie_mutant.dead"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.shake = query.shake_time - query.frame_alpha;",
+          "variable.shake_power = variable.shake > 0.0 ? -Math.sin(variable.shake * 200.0) * variable.shake : 0.0;"
+        ],
+        "animate": [
+          "move"
+        ]
+      },
+      "geometry": {
+        "default": "geometry.Villager_zombie_mutant"
+      },
+      "render_controllers": [ "controller.render.iron_golem" ]
+    }
+  }
+}

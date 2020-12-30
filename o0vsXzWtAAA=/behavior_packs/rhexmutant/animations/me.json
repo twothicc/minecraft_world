@@ -1,0 +1,18 @@
+{
+	"format_version" : "1.8.0",
+	"animations" : {
+		"animation.meattack" : {
+            "timeline":{
+  "0.62":[
+  "/gamerule sendcommandfeedback false",
+  "/tag @s add me",
+  "/tp @e[tag=!me,r=3] ~~7~",
+  "/tag @s remove me",
+  "/gamerule sendcommandfeedback true"
+  ]
+  },
+  "loop":true,
+  "animation_length": 0.64
+}
+}
+}

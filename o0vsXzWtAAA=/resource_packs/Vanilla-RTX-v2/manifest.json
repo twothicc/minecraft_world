@@ -1,0 +1,20 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "The vanilla textures with raytracing!\nVersion: 2.5\nBy Nicinator",
+        "name": "Vanilla RTX",
+        "uuid": "09962250-c037-43c4-b1ac-06331dd99bda",
+        "version": [2, 5, 0],
+        "min_engine_version": [1, 16, 200]
+    },
+    "modules": [
+        {
+            "type": "resources",
+            "uuid": "b8339b38-01f3-4673-be4c-0f2cb66456a6",
+            "version": [2, 5, 0]
+        }
+	],
+    "capabilities" : [
+            "raytraced"
+    ]			
+}

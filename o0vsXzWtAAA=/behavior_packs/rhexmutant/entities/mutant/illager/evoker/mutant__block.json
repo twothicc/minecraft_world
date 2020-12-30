@@ -1,0 +1,67 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "rhex:mutant_projectile_fang",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "runtime_identifier": "minecraft:shulker_bullet"
+    },
+
+    "components": {
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 0.6
+      },
+      "minecraft:area_attack" : {
+          "damage_range": 1.4,
+          "damage_per_tick": 1.5,
+          "cause": "contact",
+          "entity_filter": {
+            "all_of": [
+		    { "test": "is_family", "subject": "other", "operator": "!=", "value": "rhexevocation_illager" }
+		  ]
+        }
+      },
+      "minecraft:projectile": {
+        "on_hit": {
+          "impact_damage": {
+            "damage": 3.5,
+            "knockback": true,
+            "should_bounce": true
+          },
+          
+          "spawn_chance": {
+            "first_spawn_chance": 1,
+            "second_spawn_chance": 9999,
+            "first_spawn_count": 1,
+            "second_spawn_count": 1,
+            "spawn_baby": false,
+            "spawn_definition": "rhex:evocation_mutant_fang"
+          },
+          
+          "remove_on_hit": {
+          },
+          "particle_on_hit": {
+            "particle_type": "largeexplode",
+            "on_other_hit": true
+          }
+        },
+        "hit_sound": "bullet.hit",
+        
+        "crit_particle_on_hurt": true,
+        "power": 1.6,
+        "gravity": 0.05,
+        "uncertainty_base": 16,
+        "uncertainty_multiplier": 4,
+        "anchor": 1,
+        "offset": [ 0, -0.1, 0 ],
+        "homing": true
+      },
+      "minecraft:physics": {
+        "has_collision": false
+      }
+    }
+  }
+}

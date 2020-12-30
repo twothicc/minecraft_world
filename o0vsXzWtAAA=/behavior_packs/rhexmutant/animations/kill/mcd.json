@@ -1,0 +1,12 @@
+{
+	"format_version" : "1.8.0",
+	"animations" : {
+		"animation.mcdsuck" : {
+            "timeline": {
+              "0.0001": "/tp @e @s ^^^1"
+            },
+            "animation_length": 0.1,
+			"loop" : true
+		}
+	}
+}

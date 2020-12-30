@@ -1,0 +1,58 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "rhex:fmutant_snowgolem",
+      "materials": { 
+"default": "spider",
+ "sheared": "iron_golem",
+ "block": "iron_golem",
+ "charged3": "charged_creeper" 
+}, 
+      "textures": {
+        "default": "textures/entity/future/sgolem",
+        "sheared": "textures/entity/future/sgolem",
+        "block": "textures/entity/ice",
+        "charged3": "textures/entity/manyice"
+      },
+      "geometry": {
+        "default": "geometry.Snow_mutant_future",
+        "sheared": "geometry.Snow_mutant_future_sheared",
+        "block": "geometry.Snow_mutant_block",
+        "charged3": "geometry.Snow_mutant_future_armor"
+      },
+      "animations": {
+      //controler_animation
+        "root": "controller.animation.all.root",
+        "root2": "controller.animation.mutant.hurt",
+        "root3": "controller.animation.mutant.general",
+        //animation
+        "general": "animation.Enderman_mutant.general",
+        "hurt": "animation.Snow_mutant.attack",
+        "move": "animation.Snow_mutant.walk",
+        "sitting": "animation.Snow_mutant.sit",
+        "look_at_target": "animation.mutant.look_at_target"
+      },
+      "scripts": {
+        "animate": [
+          "root",
+          "root2",
+          "root3",
+          "root4",
+          "root5"
+        ]
+      }, 
+      "render_controllers": [ 
+{ "controller.render.iron_golem": "!query.is_sheared" },
+{ "controller.render.creeper_armor3": "query.variant == 2" },
+{ "controller.render.mssheared": "query.is_sheared" },
+ { "controller.render.meblock": "query.is_powered" }
+ ],
+    "spawn_egg": {
+        "texture": "mutantspawneggs",
+        "texture_index": 4
+      }
+    }
+  }
+}
+

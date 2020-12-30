@@ -1,0 +1,32 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "java:obsidian_colossus",
+      "materials": { "default": "iron_golem" }, 
+      "textures": {
+        "default": "textures/entity/java/obsidianColossus"
+      },
+      "geometry": {
+        "default": "geometry.Colossus_java"
+      },
+      "animations": {
+        "root": "controller.animation.all.root",
+        "attack": "animation.Colossus_java.attack",
+        "move": "animation.Zombie_mutant.walk",
+        "look_at_target": "animation.mutant.look_at_target"
+      },
+      "scripts": {
+        "animate": [
+          "root"
+        ]
+      }, 
+      "render_controllers": [ "controller.render.iron_golem" ],
+    "spawn_egg": {
+        "texture": "mutantspawneggs",
+        "texture_index": 6
+      }
+    }
+  }
+}
+

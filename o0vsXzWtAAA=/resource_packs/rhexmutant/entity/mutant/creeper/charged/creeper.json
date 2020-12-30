@@ -1,0 +1,58 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "rhex:cmutant_creeper",
+      "materials": { 
+"default": "creeper",
+"armor": "charged_creeper",
+"hurt": "charged_creeper",
+"charged3": "charged_creeper"
+}, 
+      "textures": {
+        "default": "textures/entity/mutant/rcreeper",
+        "armor": "textures/entity/mutant/mcreeper_armor_heal",
+        "hurt": "textures/entity/mutant/mcreeper_armor_heal",
+        "charged3": "textures/entity/mutant/mcreeper_armor"
+      },
+      "geometry": {
+        "default": "geometry.Creeper_mutant",
+        "armor": "geometry.Creeper_mutant_charge",
+        "hurt": "geometry.Creeper_mutant_charge",
+        "charged3": "geometry.Creeper_mutant_armor"
+        
+      },
+      "animations": {
+        "root": "controller.animation.all.root",
+        "root2": "controller.animation.mutant.general",
+        "root3": "controller.animation.mutant.hurt",
+        "root4": "controller.animation.mutant.block",
+        "hurt": "animation.Creeper_mutant_dead.explode",
+        "block": "animation.Creeper_mutant.roar",
+        "general": "animation.Enderman_mutant.general",
+        "move": "animation.Creeper_mutant.move2",
+        "attack": "animation.Creeper_mutant.attack",
+        "look_at_target": "animation.rmcreeper.look_at_target"
+      },
+      "scripts": {
+        "animate": [
+          "root",
+          "root2",
+          "root3",
+          "root4"
+        ]
+      }, 
+      "render_controllers": [ 
+"controller.render.mtantcreeper",
+"controller.render.mehurt",
+"controller.render.mearmor", 
+"controller.render.creeper_armor3"
+ ],
+    "spawn_egg": {
+        "texture": "mutantspawneggs",
+        "texture_index": 1
+      }
+    }
+  }
+}
+

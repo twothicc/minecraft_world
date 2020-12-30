@@ -1,0 +1,31 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "rhex:stick",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false,
+    "scripts": {
+        "animate": [
+          "tag"
+        ]
+      },
+      "animations": {
+        "tag": "controller.animation.tag"
+      }
+    },
+
+    "component_groups": {
+    },
+
+    "components": {
+      "minecraft:type_family": {
+        "family":["inanimate"]          
+      }
+    },
+
+    "events": {
+    }
+  }
+}

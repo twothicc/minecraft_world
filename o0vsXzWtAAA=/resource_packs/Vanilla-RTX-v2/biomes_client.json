@@ -1,0 +1,219 @@
+/*
+ - Default is the settings that a biome will use if it is not specified.
+ - All fields in a biome are optional default values will overwrite the missing ones.
+ - If the default is overwritten in a resource pack then it will overwrite all biomes unless the resource pack defines the biomes.
+ - Vanilla 1.16.100
+  */
+{
+  "biomes": {
+    "default": {
+      "water_surface_transparency": 0.75,
+      "water_surface_color": "#FFFFFF",
+      "fog_identifier": "vanillartx:default"
+    },
+    "plains": {
+      "fog_identifier": "vanillartx:default"
+    },
+    "sunflower_plains": {
+      "fog_identifier": "vanillartx:default"
+    },
+    "desert": {
+      "fog_identifier": "vanillartx:desert"
+    },
+    "extreme_hills": {
+      "fog_identifier": "vanillartx:default"
+    },
+    "forest": {
+     "fog_identifier": "vanillartx:default"
+    },
+    "flower_forest": {
+      "fog_identifier": "vanillartx:default"
+    },
+    "taiga": {
+      "fog_identifier": "vanillartx:default"
+    },
+    "taiga_mutated": {
+      "fog_identifier": "vanillartx:default"
+    },
+    "swampland": {
+      "fog_identifier": "vanillartx:swamp"
+    },
+    "swampland_mutated": {
+      "fog_identifier": "vanillartx:swamp"
+    },
+    "river": {
+      "fog_identifier": "vanillartx:wet"
+    },
+    "hell": {
+      "fog_identifier": "vanillartx:nether"
+    },
+    "the_end": {
+      "fog_identifier": "vanillartx:default"
+    },
+    "frozen_river": {
+      "fog_identifier": "vanillartx:cold"
+    },
+    "ice_plains": {
+      "fog_identifier": "vanillartx:cold"
+    },
+    "ice_plains_spikes": {
+      "fog_identifier": "vanillartx:cold"
+    },
+    "ice_mountains": {
+      "fog_identifier": "vanillartx:cold"
+    },
+    "mushroom_island": {
+      "fog_identifier": "vanillartx:default"
+    },
+    "mushroom_island_shore": {
+      "fog_identifier": "vanillartx:default"
+    },
+    "beach": {
+      "fog_identifier": "vanillartx:wet"
+    },
+    "desert_hills": {
+      "fog_identifier": "vanillartx:desert"
+    },
+    "forest_hills": {
+      "fog_identifier": "vanillartx:default"
+    },
+    "taiga_hills": {
+      "fog_identifier": "vanillartx:cold"
+    },
+    "extreme_hills_edge": {
+      "fog_identifier": "vanillartx:cold"
+    },
+    "jungle": {
+      "fog_identifier": "vanillartx:wet"
+    },
+    "bamboo_jungle": {
+      "fog_identifier": "vanillartx:wet"
+    },
+    "jungle_mutated": {
+      "fog_identifier": "vanillartx:wet"
+    },
+    "jungle_hills": {
+      "fog_identifier": "vanillartx:wet"
+    },
+    "bamboo_jungle_hills": {
+      "fog_identifier": "vanillartx:wet"
+    },
+    "jungle_edge": {
+      "fog_identifier": "vanillartx:wet"
+    },
+    "stone_beach": {
+      "fog_identifier": "vanillartx:wet"
+    },
+    "cold_beach": {
+      "fog_identifier": "vanillartx:cold"
+    },
+    "birch_forest": {
+      "fog_identifier": "vanillartx:default"
+    },
+    "birch_forest_hills": {
+      "fog_identifier": "vanillartx:default"
+    },
+    "roofed_forest": {
+      "fog_identifier": "vanillartx:default"
+    },
+    "cold_taiga": {
+      "fog_identifier": "vanillartx:cold"
+    },
+    "cold_taiga_mutated": {
+      "fog_identifier": "vanillartx:cold"
+    },
+    "cold_taiga_hills": {
+      "fog_identifier": "vanillartx:cold"
+    },
+    "mega_taiga": {
+      "fog_identifier": "vanillartx:default"
+    },
+    "mega_spruce_taiga": {
+      "fog_identifier": "vanillartx:default"
+    },
+    "mega_taiga_mutated": {
+      "fog_identifier": "vanillartx:default"
+    },
+    "mega_spruce_taiga_mutated": {
+      "fog_identifier": "vanillartx:default"
+    },
+    "mega_taiga_hills": {
+      "fog_identifier": "vanillartx:default"
+    },
+    "extreme_hills_plus_trees": {
+      "fog_identifier": "vanillartx:cold"
+    },
+    "extreme_hills_plus_trees_mutated": {
+      "fog_identifier": "vanillartx:cold"
+    },
+    "extreme_hills_mutated": {
+      "fog_identifier": "vanillartx:cold"
+    },
+    "savanna": {
+      "fog_identifier": "vanillartx:desert"
+    },
+    "savanna_plateau": {
+      "fog_identifier": "vanillartx:desert"
+    },
+    "savanna_mutated": {
+      "fog_identifier": "vanillartx:desert"
+    },
+    "mesa": {
+      "fog_identifier": "vanillartx:desert"
+    },
+    "mesa_bryce": {
+      "fog_identifier": "vanillartx:desert"
+    },
+    "mesa_mutated": {
+      "fog_identifier": "vanillartx:desert"
+    },
+    "mesa_plateau_stone": {
+      "fog_identifier": "vanillartx:desert"
+    },
+    "mesa_plateau": {
+      "fog_identifier": "vanillartx:desert"
+    },
+    "ocean": {
+      "fog_identifier": "vanillartx:default"
+    },
+    "deep_ocean": {
+      "fog_identifier": "vanillartx:default"
+    },
+    "warm_ocean": {
+      "fog_identifier": "vanillartx:default"
+    },
+    "deep_warm_ocean": {
+      "fog_identifier": "vanillartx:default"
+    },
+    "lukewarm_ocean": {
+      "fog_identifier": "vanillartx:default"
+    },
+    "deep_lukewarm_ocean": {
+      "fog_identifier": "vanillartx:default"
+    },
+    "cold_ocean": {
+      "fog_identifier": "vanillartx:cold"
+    },
+    "deep_cold_ocean": {
+      "fog_identifier": "vanillartx:cold"
+    },
+    "frozen_ocean": {
+      "fog_identifier": "vanillartx:cold"
+    },
+    "deep_frozen_ocean": {
+      "fog_identifier": "vanillartx:cold"
+    },
+    "warped_forest": {
+      "fog_identifier": "vanillartx:nether"
+    },
+    "crimson_forest": {
+      "fog_identifier": "vanillartx:nether"
+    },
+    "soulsand_valley": {
+      "fog_identifier": "vanillartx:soul"
+    },
+    "basalt_deltas": {
+      "fog_identifier": "vanillartx:basalt"
+    }
+  }
+}

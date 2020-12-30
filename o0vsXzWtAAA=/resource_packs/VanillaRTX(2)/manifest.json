@@ -1,0 +1,20 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "The vanilla textures with raytracing!\nVersion: 2.5 | Smooth Quartz Addon\nBy Nicinator",
+        "name": "Vanilla RTX Smooth Quartz Addon",
+        "uuid": "1c06d5c4-6503-4c3e-88a2-148771ecd3f0",
+        "version": [2, 5, 0],
+        "min_engine_version": [1, 15, 0]
+    },
+    "modules": [
+        {
+            "type": "resources",
+            "uuid": "29c4d3e2-f9f2-4b53-925c-69f333aef9bf",
+            "version": [2, 5, 0]
+        }
+	],
+    "capabilities" : [
+            "raytraced"
+    ]			
+}

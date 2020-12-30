@@ -1,0 +1,32 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.hammer_hulk_smash": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "shoot": "query.mark_variant == 2 && query.get_equipped_item_name=='hulk_hammer' && variable.attack_time"
+            }
+          ]
+        },
+        "shoot": {
+          "transitions": [
+            {
+              "default": "query.mark_variant == 2 && query.get_equipped_item_name=='hulk_hammer' && variable.attack_time"
+            }
+          ],
+          "on_entry": [
+            "@s smash",
+            "/execute @s ~~~ detect ~~-1~ grass 0 fill ~~-1 ~ ~~-1 ~ dirt 0 destroy",
+             "/execute @s ~~~ detect ~1~-1~1 grass 0 fill ~1~-1~1 ~1~-1 ~1 dirt 0 destroy",
+             "/execute @s ~~~ detect ~-1~-1~-1 grass 0 fill ~-1~-1~-1 ~-1~-1 ~-1 dirt 0 destroy",
+             "/execute @s ~~~ detect ~-1~-1~1 grass 0 fill ~-1~-1~1 ~-1~-1 ~1 dirt 0 destroy",
+             "/execute @s ~~~ detect ~1~-1~-1 grass 0 fill ~1~-1~-1 ~1~-1 ~-1 dirt 0 destroy"
+          ]
+        }
+      }
+    }
+  }
+}

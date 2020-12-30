@@ -1,0 +1,201 @@
+{
+    "format_version": "1.10.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "rhex:mutant_vindicator_dead",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": 
+    {
+    "going_roar":{
+    "minecraft:timer": {
+          "looping": false,
+          "time": 0,
+          "time_down_event": {
+            "event": "roar"
+            }
+            }
+          },
+          
+          
+          "break": {
+      "minecraft:scale": {
+        "value": 0.0
+      },
+"minecraft:transformation": {
+          "into": "rhex:mutant_vindicator<minecraft:health_is_in_danger>",
+          "delay": 0
+        }
+        },
+    "roar": {
+        "minecraft:is_shaking": {
+        },
+        "minecraft:mob_effect": {
+          "effect_range": 10,
+          "mob_effect": "weakness",
+          "effect_time": 3,
+          "entity_filter": {
+            "any_of": [
+              { "test": "is_family", "subject": "other", "value": "player" },
+              { "test": "is_family", "subject": "other", "value": "mob" },
+              { "test": "is_family", "subject": "other", "value": "monster" }
+            ] 
+        }
+      },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "resistance",
+              "amplifier": 255,
+              "visible": false,
+              "ambient": false,
+              "duration": 7
+              },
+            {
+              "effect": "regeneration",
+              "amplifier": 3,
+              "visible": false,
+              "ambient": false,
+              "duration": 7
+            }
+          ]
+          },
+          "minecraft:behavior.knockback_roar": {
+          "priority": 0,
+          "duration": 6.76,
+          "attack_time": 0.2,
+          "knockback_damage": 14,
+          "knockback_strength": 7,
+          "knockback_range": 10,
+          "knockback_filters": {
+            "test": "is_family",
+            "subject": "other",
+            "operator": "!=",
+            "value": "illager"
+          },
+          "damage_filters": {
+            "test": "is_family",
+            "subject": "other",
+            "operator": "!=",
+            "value": "illager"
+          },
+          "cooldown_time": 99999
+        },
+          "minecraft:timer": {
+          "looping": false,
+			"time": [6.76, 6.76],
+          "time_down_event": {
+          "event": "going_dead"
+          }
+          }
+          },
+          "going_dead":{
+          "minecraft:is_charged": {
+        },
+          "minecraft:timer": {
+          "looping": false,
+			"time": [5.42, 5.42],
+          "time_down_event": {
+          "event": "dead"
+          }
+          }
+          },
+    "dead": {
+    
+        "minecraft:health": {
+        "value": 0,
+        "min": 0,
+        "max": 0
+        },
+        "minecraft:spawn_entity": [
+	    {
+		  "min_wait_time": 0,
+		  "max_wait_time": 0,
+		  "num_to_spawn": 50,
+		  "single_use": true,
+		  "spawn_entity": "minecraft:xp_orb"
+		}
+	  ],
+        "minecraft:scale": {
+          "value": 0
+        }
+        }
+        },
+    "components": {
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:fire_immune": true,
+      "minecraft:burns_in_daylight": false,
+      "minecraft:type_family": {
+        "family": [ "inanimate", "vindicator", "illager" ]
+      },
+      "minecraft:collision_box": {
+        "width": 1.2,
+        "height": 2.9
+      },
+    
+        "minecraft:scale": {
+          "value": 1.50
+        },
+        "minecraft:health": {
+        "value": 1,
+        "min": 1,
+        "max": 1
+      },
+       "minecraft:knockback_resistance": {
+         "value": 1.0
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:physics": {
+      }
+      },
+    "events": {
+      "dead": {
+        "add": {
+          "component_groups": [
+            "dead"
+          ]
+        }
+      },
+      "going_dead": {
+        "add": {
+          "component_groups": [
+            "going_dead"
+          ]
+        },       
+        "remove": {
+          "component_groups": [
+            "roar"
+          ]
+        }
+      },
+      "going_roar": {
+        "add": {
+          "component_groups": [
+            "going_roar"
+          ]
+        }
+      },
+      "break": {
+        "add": {
+          "component_groups": [
+            "break"
+          ]
+        }
+      },
+      "roar": {
+        "add": {
+          "component_groups": [
+            "roar"
+          ]
+        }
+      }
+    }
+  }
+}

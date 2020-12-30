@@ -1,0 +1,50 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "rhex:mutant_enderman",
+      "materials": { "default": "iron_golem", "roar": "charged_creeper", "hurt": "charged_creeper" }, 
+      "textures": {
+        "default": "textures/entity/mutant/enderman",
+        "roar": "textures/entity/mutant/endersoul",
+        "hurt": "textures/entity/mutant/endersoul"
+      },
+      "geometry": {
+        "default": "geometry.Enderman_mutant",
+        "roar": "geometry.Enderman_mutant_soul",
+        "hurt": "geometry.Enderman_mutant_soul"
+      },
+      "animations": {
+      //controler_animation
+        "root": "controller.animation.all.root",
+        "root2": "controller.animation.mutant.has_target",
+        "root3": "controller.animation.mutant.general",
+        "root4": "controller.animation.mutant.hurt",
+        
+        //animation
+        "hurt": "animation.Enderman_mutant.hurt",
+        "general": "animation.Enderman_mutant.general",
+        "target": "animation.Enderman_mutant.has_target",
+        "move": "animation.Enderman_mutant.walk",
+        "attack": "animation.Enderman_mutant.attack",
+        "look_at_target": "animation.mutant.look_at_target",
+        "roar": "animation.Enderman_mutant.roar",
+        "roar_move": "animation.Enderman_mutant.roar"
+      },
+      "scripts": {
+        "animate": [
+          "root",
+          "root2",
+          "root3",
+          "root4"
+        ]
+      }, 
+      "render_controllers": [ "controller.render.iron_golem", "controller.render.meroar", "controller.render.mehurt" ],
+    "spawn_egg": {
+        "texture": "golem",
+        "texture_index": 35
+      }
+    }
+  }
+}
+

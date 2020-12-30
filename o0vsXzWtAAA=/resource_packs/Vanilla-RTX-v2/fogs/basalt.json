@@ -1,0 +1,28 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:fog_settings": {
+    "description": {
+      "identifier": "vanillartx:basalt"
+    },
+    "distance": {
+      "air": {
+        "fog_start": 0.0,
+        "fog_end": 64.0,
+        "fog_color": "#808080",
+        "render_distance_type": "fixed"
+      },
+      "lava": {
+        "fog_start": 0.0,
+        "fog_end": 1.5,
+        "fog_color": "#FFA41C",
+        "render_distance_type": "fixed"
+      },
+      "lava_resistance": {
+        "fog_start": 0.0,
+        "fog_end": 8.0,
+        "fog_color": "#FFA41C",
+        "render_distance_type": "fixed"
+      }
+    }
+  }
+}

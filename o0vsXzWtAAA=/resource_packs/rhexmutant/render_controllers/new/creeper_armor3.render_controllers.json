@@ -1,0 +1,26 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.creeper_armor3": {
+      "geometry": "Geometry.charged3",
+      "part_visibility": [
+        { "*": "query.variant == 2" }
+      ],
+      "materials": [ { "*": "Material.charged3" } ],
+      "textures": [ "Texture.charged3" ],
+      "overlay_color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+      },
+      "uv_anim": {
+          "offset": [ "(query.variant == 2) ? (Math.floor(query.life_time * 10.0) + query.frame_alpha) * 0.03 : 0.0", 
+                      "(query.variant == 2) ? (Math.floor(query.life_time * 10.0) + query.frame_alpha) * 0.03 : 0.0" ],
+          "scale": [ 1.5, 1.5 ]
+      },
+      "light_color_multiplier": 0.5,
+      "ignore_lighting" : true
+    }
+  }
+}

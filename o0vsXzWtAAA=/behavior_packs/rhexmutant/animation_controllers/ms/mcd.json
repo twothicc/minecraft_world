@@ -1,0 +1,29 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.mcmmdr": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "walking": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/execute @e[r=10] ~ ~ ~ tp @s ^ ^ ^1.0 facing @s"
+          ]
+        },
+        "walking": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/execute @e[r=10] ~ ~ ~ tp @s ^ ^ ^1.0 facing @s"
+          ]
+        }
+      }
+    }
+  }
+}

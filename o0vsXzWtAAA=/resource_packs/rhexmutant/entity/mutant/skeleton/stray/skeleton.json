@@ -1,0 +1,56 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "rhex:mutant_stray",
+      "materials": { 
+"default": "spider",
+"arrow": "iron_golem"
+}, 
+      "textures": {
+        "default": "textures/entity/mutant/rmstray",
+        "arrow": "textures/entity/mutant/arrow"
+      },
+      "geometry": {
+        "default": "geometry.rStray_mutant",
+        "arrow": "geometry.Skeleton_mutant_arrow"
+        
+      },
+      "animations": {
+        "root": "controller.animation.all.root",
+        "root2": "controller.animation.mutant.general",
+        "root3": "controller.animation.mutant.hurt",
+        "root4": "controller.animation.mutant.block",
+        "block": "animation.Skeleton_mutant.reload2",
+        "general": "animation.Enderman_mutant.general",
+        "move": "animation.Skeleton_mutant.walk",
+        "attack": "animation.Skeleton_mutant.attack",
+        "hurt": "animation.Skeleton_mutant.reload",
+        "look_at_target": "animation.mutant.look_at_target",
+        "roar": "animation.Skeleton_mutant.ribs_attack",
+        "roar_move": "animation.Skeleton_mutant.ribs_attack"
+      },
+      "scripts": {
+      "pre_animation": [
+          "variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;"
+          ],
+        "animate": [
+          "root",
+          "root2",
+          "root3",
+          "root4"
+        ]
+      }, 
+      "render_controllers": [ 
+"controller.render.iron_golem",
+ { "controller.render.smarrow": "query.is_powered" },
+ { "controller.render.smarrow": "query.is_sheared" }
+ ],
+    "spawn_egg": {
+        "texture": "mutantspawneggs",
+        "texture_index": 17
+      }
+    }
+  }
+}
+

@@ -1,0 +1,31 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "rhex:mutant_enderman_block",
+      "materials": {
+	    "default": "iron_golem"
+	  },
+      "textures": {
+        "default": "textures/entity/grass",
+        "default2": "textures/entity/stone"
+      },
+      "animations": {
+        "move": "animation.rblock.move"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.shake = query.shake_time - query.frame_alpha;",
+          "variable.shake_power = variable.shake > 0.0 ? -Math.sin(variable.shake * 200.0) * variable.shake : 0.0;"
+        ],
+        "animate": [
+          "move"
+        ]
+      },
+      "geometry": {
+        "default": "geometry.block"
+      },
+      "render_controllers": [ "controller.render.eeebbblllooocck" ]
+    }
+  }
+}

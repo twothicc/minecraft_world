@@ -1,0 +1,33 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.pleffect": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "walking": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/effect @s jump_boost 2 5 true",
+            "/effect @s resistance 2 2 true",
+            "/effect @s regeneration 2 1 true"
+          ]
+        },
+        "walking": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/effect @s jump_boost 2 5 true",
+            "/effect @s resistance 2 2 true",
+            "/effect @s regeneration 2 1 true"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,351 @@
+{
+  "format_version" : "1.8.0",
+"animation_controllers":{
+"controller.animation.bonetpms": {
+    "states": {
+          "default": {
+        "on_entry": [
+        "/spreadplayers ~ ~ 0 2 @s",
+          "/tp @s ~ ~2 ~"
+        ]}}},
+        "controller.animation.xxxyptowrok": {
+    "states": {
+          "default": {
+        "on_entry": [
+          "/tp @s ~ ~ ~3"
+        ]}}},
+        "controller.animation.xxxyptowrokiceice": {
+    "states": {
+          "default": {
+        "on_entry": [
+          "/fill ~4~-1~4~-4~-1~-4 ice"
+        ]}}},
+        "controller.animation.slow2effect": {
+    "states": {
+          "default": {
+        "on_entry": [
+          "/effect @e[type=!rhex:sgspike,type=!rhex:fmutant_snowgolem,type=!rhex:mutant_snowgolem,r=1.99] slowness 6 2 true"
+        ]}}},
+        "controller.animation.smashsmash": {
+    "states": {
+          "default": {
+        "on_entry": [
+              "/execute @s ~~~ detect ~~-1~ grass 0 fill ~~-1 ~ ~~-1 ~ dirt 0 destroy"
+        ]}}},
+        "controller.animation.smashsmash2": {
+    "states": {
+          "default": {
+        "on_entry": [
+          "@s smash"
+        ]}}},
+        "controller.animation.golem_float": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"float": "query.is_in_water"
+                    }]},
+				"float": {
+					"transitions": [
+						{
+							"default": "query.is_in_water"
+						}],
+					"on_entry": [
+						"/effect @s levitation 1 10 true"
+					]}}},
+					"controller.animation.mvex_charge": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"float": "query.is_charging"
+                    }]},
+				"float": {
+					"transitions": [
+						{
+							"default": "query.is_charging"
+						}],
+					"on_entry": [
+						"@s charge"
+					]}}},
+					"controller.animation.removemvex_charge": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"float": "!query.is_charging"
+                    }]},
+				"float": {
+					"transitions": [
+						{
+							"default": "!query.is_charging"
+						}],
+					"on_entry": [
+						"@s remove_charge"
+					]}}},
+					"controller.animation.sp_charge": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"float": "query.is_stalking"
+                    }]},
+				"float": {
+					"transitions": [
+						{
+							"default": "query.is_stalking"
+						}],
+					"on_entry": [
+						"@s charge"
+					]}}},
+					"controller.animation.removesp_charge": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"float": "!query.is_stalking"
+                    }]},
+				"float": {
+					"transitions": [
+						{
+							"default": "!query.is_stalking"
+						}],
+					"on_entry": [
+						"@s remove_charge"
+					]}}},
+        "controller.animation.rainarrowsm": {
+    "states": {
+          "default": {
+        "on_entry": [
+          "/spreadplayers ~ ~ 0 12 @s",
+          "/tp @s ~ ~22 ~"
+        ]}}},
+        "controller.animation.rainheadwd2": {
+    "states": {
+          "default": {
+        "on_entry": [
+          "/spreadplayers ~ ~ 0 30 @s",
+          "/tp @s ~ ~70 ~"
+        ]}}},
+        "controller.animation.rainarrowwd2": {
+    "states": {
+          "default": {
+        "on_entry": [
+          "/tp @s ~ ~22 ~"
+        ]}}},
+        "controller.animation.ssseffectevocation": {
+    "states": {
+          "default": {
+        "on_entry": [
+          "/particle minecraft:critical_hit_emitter ~ ~4 ~"
+        ]}}},
+        "controller.animation.titanrain": {
+    "states": {
+          "default": {
+        "on_entry": [
+          "/spreadplayers ~ ~ 0 40 @s",
+          "/tp @s ~ ~70 ~"
+        ]}}},
+        "controller.animation.mutated": {
+    "states": {
+          "default": {
+        "on_entry": [
+          "/particle minecraft:huge_explosion_emitter ~ ~ ~",
+  "/playsound random.explode @a ~ ~ ~"
+        ]}}},
+        "controller.animation.mdie": {
+    "states": {
+          "default": {
+        "on_entry": [
+          "/particle minecraft:huge_explosion_emitter ~ ~ ~",
+  "/playsound random.explode @a"
+        ]}}},
+        "controller.animation.mspread": {
+    "states": {
+          "default": {
+        "on_entry": [
+          "/spreadplayers ~ ~ 0 7 @s",
+          "/tp @s ~ ~-1 ~"
+        ]}}},
+        "controller.animation.mmhh": {
+    "states": {
+          "default": {
+        "on_entry": [
+          "/spreadplayers ~ ~ 0 1 @s",
+          "/tp @s ~ ~-1 ~"
+        ]}}},
+        "controller.animation.mecpread": {
+    "states": {
+          "default": {
+        "on_entry": [
+          "/spreadplayers ~ ~ 0 14 @s"
+        ]}}},
+        "controller.animation.wd_lightning": {
+    "states": {
+          "default": {
+        "on_entry": [
+          "/spreadplayers ~ ~ 0 30 @s"
+        ]}}},
+        "controller.animation.scarlet": {
+    "states": {
+          "default": {
+        "on_entry": [
+          "/title @a actionbar §6§lADDON BY RHEX MCPE",
+          "/title @a title §l§eTHE SCARLET",
+          "/title @a subtitle §l§eHAS ARRIVED"
+        ]}}},
+        "controller.animation.enchanted": {
+    "states": {
+          "default": {
+        "on_entry": [
+          "/title @a actionbar §6§lADDON BY RHEX MCPE",
+          "/title @a title §l§eTHE ENCHANTED",
+          "/title @a subtitle §l§eHAS ARRIVED"
+        ]}}},
+        "controller.animation.rhex": {
+    "states": {
+          "default": {
+        "on_entry": [
+          "/title @a actionbar §6§laddon by rhex mcpe",
+          "/title @a title §l§eMADE BY",
+          "/title @a subtitle §l§eRHEX MCPE12"
+        ]}}},
+        "controller.animation.titanrain2": {
+    "states": {
+          "default": {
+        "on_entry": [
+          "/spreadplayers ~ ~ 0 30 @s",
+          "/tp @s ~ ~1 ~",
+          "/fill ~-1 ~-1 ~-1 ~ ~-2 ~ air"
+        ]}}},
+        "controller.animation.metp": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"tp": "query.position_delta"
+						}
+					]
+				},
+				"tp": {
+					"transitions": [
+						{
+							"default": "query.position_delta"
+						}
+					],
+					"on_entry": [
+						"@s tp"
+					]
+				}
+			}
+		},
+        "controller.animation.mup": {
+    "states": {
+          "default": {
+        "on_entry": [
+          "/spreadplayers ~ ~ 0 7 @s",
+          "/fill ~ ~-1 ~ ~ ~-2 ~ air"
+        ]}}},
+        "controller.animation.mdown": {
+    "states": {
+          "default": {
+        "on_entry": [
+          "/fill ~ ~ ~ ~ ~ ~ grass",
+          "/tp @s ~-9999 ~-9999 ~-9999",
+          "/kill @s"
+        ]}}},
+        "controller.animation.mzplava": {
+    "states": {
+          "default": {
+        "on_entry": [
+          "/fill ~ ~ ~ ~ ~ ~ lava"
+        ]}}},
+        "controller.animation.spweb": {
+    "states": {
+          "default": {
+        "on_entry": [
+          "/fill ~ ~ ~ ~ ~ ~ web",
+          "/kill @s"
+        ]}}},
+        "controller.animation.mzsmash": {
+    "states": {
+          "default": {
+        "on_entry": [
+          "@s smash"
+        ]}}},
+        "controller.animation.tag": {
+    "states": {
+          "default": {
+        "on_entry": [
+          "/tag @e[r=5] add target",
+          "/kill @s"
+        ]}}},
+        "controller.animation.metag": {
+    "states": {
+          "default": {
+        "on_entry": [
+          "/tag @e[r=5,type=!rhex:mutant_enderman,type=!rhex:meclone,type=!rhex:fmutant_enderman] add metarget",
+          "/kill @s"
+        ]}}},
+        "controller.animation.mztag": {
+    "states": {
+          "default": {
+        "on_entry": [
+          "/tag @e[r=5,type=!rhex:mutant_zombie,type=!rhex:mutant_zombie_villager,type=!rhex:zombie] add mztarget",
+          "/kill @s"
+        ]}}},
+        "controller.animation.mitag": {
+    "states": {
+          "default": {
+        "on_entry": [
+          "/tag @e[r=5,type=!rhex:mutant_vindicator,type=!rhex:vindicator] add mitarget",
+          "/kill @s"
+        ]}}},
+        "controller.animation.mzdtag": {
+    "states": {
+          "default": {
+        "on_entry": [
+          "/tag @e[r=5,type=!rhex:mutant_zombie_drowned,type=!rhex:thrown_mtrident,type=!rhex:drowned] add mzdtarget",
+          "/kill @s"
+        ]}}},
+        "controller.animation.mzptag": {
+    "states": {
+          "default": {
+        "on_entry": [
+          "/tag @e[r=5,type=!rhex:mutant_pigzombie,type=!rhex:mutant_pigzombie_piglin,type=!rhex:pigzombie] add mzptarget",
+          "/kill @s"
+        ]}}},
+        "controller.animation.mctag": {
+    "states": {
+          "default": {
+        "on_entry": [
+          "/tag @e[r=5,type=!rhex:mutant_creeper,type=!rhex:creeper_minion,type=!rhex:cmutant_creeper] add mctarget",
+          "/kill @s"
+        ]}}},
+        "controller.animation.mbptag": {
+    "states": {
+          "default": {
+        "on_entry": [
+          "/tag @e[r=5,type=!rhex:brute_piglin,type=!rhex:rbspike,type=!rhex:mutant_brute_piglin] add mbptarget",
+          "/kill @s"
+        ]}}},
+        "controller.animation.smash": {
+    "states": {
+          "default": {
+        "on_entry": [
+          "/execute @e[type=rhex:smash] ~~~ detect ~~-1~ grass 0 setblock ~~-1 ~ dirt"
+        ]}}},
+  "controller.animation.titanspread": {
+    "states": {
+          "default": {
+              "on_entry": [
+    "/spreadplayers ~ ~ 0 40 @s"
+        ]
+          }}}
+}}

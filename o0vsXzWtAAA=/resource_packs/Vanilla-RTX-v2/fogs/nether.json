@@ -1,0 +1,28 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:fog_settings": {
+    "description": {
+      "identifier": "vanillartx:nether"
+    },
+    "distance": {
+      "air": {
+        "fog_start": 0.65,
+        "fog_end": 1.0,
+        "fog_color": "#FF8D36",
+        "render_distance_type": "render"
+      },
+      "lava": {
+        "fog_start": 0.0,
+        "fog_end": 1.5,
+        "fog_color": "#FFA41C",
+        "render_distance_type": "fixed"
+      },
+      "lava_resistance": {
+        "fog_start": 0.0,
+        "fog_end": 8.0,
+        "fog_color": "#FFA41C",
+        "render_distance_type": "fixed"
+      }
+    }
+  }
+}

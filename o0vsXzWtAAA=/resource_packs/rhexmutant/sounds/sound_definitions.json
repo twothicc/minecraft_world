@@ -1,0 +1,273 @@
+{
+"mob.mzombiepig.zpig": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/mob/mzombiepig/zpig1",
+      "sounds/mob/mzombiepig/zpig2",
+      "sounds/mob/mzombiepig/zpig3",
+      "sounds/mob/mzombiepig/zpig4"
+    ]
+  },
+  "mob.mzombiepig.zpigangry": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/mob/mzombiepig/zpigangry1",
+      "sounds/mob/mzombiepig/zpigangry2",
+      "sounds/mob/mzombiepig/zpigangry3",
+      "sounds/mob/mzombiepig/zpigangry4"
+    ]
+  },
+  "mob.mzombiepig.zpigroar": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/mob/mzombiepig/roar"
+    ]
+  },
+  "mob.mzombiepig.zpighurt": {
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "sounds/mob/mzombiepig/zpighurt1",
+        "load_on_low_memory": true
+      },
+      "sounds/mob/mzombiepig/zpighurt2"
+    ]
+  },
+"mob.mutant_zombie.hurt": {
+"category": "hostile",
+"sounds": [
+"sounds/mutantzombie/snarl1",
+"sounds/mutantzombie/snarl2"
+]
+},
+"mob.mutant_zombie.death": {
+"category": "hostile",
+"sounds": [
+"sounds/mutantzombie/roarslow1"
+]
+},
+"mob.mutant_zombie.step": {
+"category": "hostile",
+"sounds": [
+"sounds/mutantzombie/step"
+]
+},
+"mob.mutant_zombie.growl": {
+"category": "hostile",
+"sounds": [
+"sounds/mutantzombie/living1",
+"sounds/mutantzombie/living2",
+"sounds/mutantzombie/living3"
+]
+},
+"mob.mutant_zombie.roar": {
+"category": "hostile",
+"sounds": [
+"sounds/mutantzombie/roar1",
+"sounds/mutantzombie/roar2"
+]
+},
+"mob.mutant_zombie.attack": {
+"category": "hostile",
+"sounds": [
+"sounds/mutantzombie/gruntA",
+"sounds/mutantzombie/gruntB"
+]
+},
+"mob.mutant_skeleton.hurt": {
+"category": "hostile",
+"sounds":[
+ "sounds/mutantskeleton/hurt1","sounds/mutantskeleton/hurt2"
+,"sounds/mutantskeleton/hurt3"
+,"sounds/mutantskeleton/hurt4"
+]
+},
+"mob.mutant_skeleton.death": {
+"category": "hostile",
+"sounds": [
+"sounds/mutantskeleton/death"
+]
+},
+"mob.mutant_skeleton.growl": {
+"category": "hostile",
+"sounds": [
+"sounds/mutantskeleton/living1",
+"sounds/mutantskeleton/living2",
+"sounds/mutantskeleton/living3"
+]
+},
+"mob.mutant_skeleton.step": {
+"category": "hostile",
+"sounds": [
+"sounds/mutantskeleton/step1",
+"sounds/mutantskeleton/step2",
+"sounds/mutantskeleton/step3",
+"sounds/mutantskeleton/step4"
+]
+},
+"mob.mutant_enderman.hurt": {
+"category": "hostile",
+"sounds":[
+ "sounds/mutantenderman/hit1","sounds/mutantenderman/hit2"
+,"sounds/mutantenderman/hit3"
+]
+},
+"mob.mutant_enderman.death": {
+"category": "hostile",
+"sounds": [
+"sounds/mutantenderman/death"
+]
+},
+"mob.mutant_enderman.growl": {
+"category": "hostile",
+"sounds": [
+"sounds/mutantenderman/living1",
+"sounds/mutantenderman/living2",
+"sounds/mutantenderman/living3"
+]
+},
+"mob.mutant_enderman.stare": {
+"category": "hostile",
+"sounds": [
+"sounds/mutantenderman/stare"
+]
+},
+"mob.mutant_enderman.scream": {
+"category": "hostile",
+"sounds": [
+"sounds/mutantenderman/scream"
+]
+},
+"mob.mutant_creeper.growl": {
+"category": "hostile",
+"sounds": [
+"sounds/mutantcreeper/living1",
+"sounds/mutantcreeper/living2",
+"sounds/mutantcreeper/living3",
+"sounds/mutantcreeper/living4"
+]
+},
+"mob.mutant_creeper.hurt": {
+"category": "hostile",
+"sounds": [
+"sounds/mutantcreeper/hurt1",
+"sounds/mutantcreeper/hurt2"
+]
+},
+"mob.mutant_creeper.death": {
+"category": "hostile",
+"sounds": [
+"sounds/mutantcreeper/fuse"
+]
+},
+"mob.mdrowned.say_water": {
+    "sounds": [
+      "sounds/mob/mdrowned/water/idle1",
+      {
+        "name": "sounds/mob/mdrowned/water/idle2",
+        "load_on_low_memory": true
+      },
+      "sounds/mob/mdrowned/water/idle3",
+      "sounds/mob/mdrowned/water/idle4"
+    ]
+  },
+  "mob.mdrowned.roar_water": {
+    "sounds": [
+      "sounds/mob/mdrowned/water/roar1",
+      "sounds/mob/mdrowned/water/roar2"
+    ]
+  },
+  "mob.mdrowned.hurt_water": {
+    "sounds": [
+      "sounds/mob/mdrowned/water/hurt1",
+      "sounds/mob/mdrowned/water/hurt2",
+      "sounds/mob/mdrowned/water/hurt3"
+    ]
+  },
+  "mob.mdrowned.idle": {
+    "sounds": [
+      "sounds/mob/mdrowned/idle1",
+      {
+        "name": "sounds/mob/mdrowned/idle2",
+        "load_on_low_memory": true
+      },
+      "sounds/mob/mdrowned/idle3",
+      "sounds/mob/mdrowned/idle4",
+      "sounds/mob/mdrowned/idle5"
+    ]
+  },
+  "mob.mdrowned.roar": {
+    "sounds": [
+      "sounds/mob/mdrowned/roar1",
+      "sounds/mob/mdrowned/roar2"
+    ]
+  },
+  "mob.mdrowned.hurt": {
+    "sounds": [
+      "sounds/mob/mdrowned/hurt1",
+      "sounds/mob/mdrowned/hurt2",
+      "sounds/mob/mdrowned/hurt3"
+    ]
+  },
+  "mob.mdrowned.shoot": {
+    "sounds": [
+      "sounds/item/trident/throw1",
+      "sounds/item/trident/throw2"
+    ]
+  },
+  "mob.mdrowned.step": {
+    "sounds": [
+      "sounds/mob/mdrowned/step1",
+      "sounds/mob/mdrowned/step2",
+      "sounds/mob/mdrowned/step3",
+      "sounds/mob/mdrowned/step4",
+      "sounds/mob/mdrowned/step5"
+    ]
+  },
+  "mob.mdrowned.swim": {
+    "sounds": [
+      "sounds/random/swim1",
+      "sounds/random/swim2",
+      "sounds/random/swim3",
+      "sounds/random/swim4"
+    ]
+  },
+"mob.spiderpig.attack": {
+"category": "hostile",
+"sounds": [
+"sounds/spiderpig/charge"
+]
+},
+  "mob.mskeleton.death": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/mob/mutantskeleton/death"
+    ]
+  },
+  "mob.mskeleton.hurt": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/mob/mutantskeleton/hurt1",
+      "sounds/mob/mutantskeleton/hurt2",
+      "sounds/mob/mutantskeleton/hurt3",
+      "sounds/mob/mutantskeleton/hurt4"
+    ]
+  },
+  "mob.mskeleton.idle": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/mob/mutantskeleton/living1",
+      "sounds/mob/mutantskeleton/living2",
+      "sounds/mob/mutantskeleton/living3"
+    ]
+  },
+  "mob.mskeleton.step": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/mob/mutantskeleton/step1",
+      "sounds/mob/mutantskeleton/step2",
+      "sounds/mob/mutantskeleton/step3",
+      "sounds/mob/mutantskeleton/step4"
+    ]
+  }
+}

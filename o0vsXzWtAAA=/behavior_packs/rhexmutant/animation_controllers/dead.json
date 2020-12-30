@@ -1,0 +1,27 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+		"controller.animation.mdead": {
+            "states": {
+                "default": {
+                    "transitions": [{
+                            "dead": "!query.is_alive && !query.is_illager_captain"
+                        }
+                    ],
+                    "on_entry": [
+						"@s mt"
+                    ]
+                },
+                "dead": {
+                    "transitions": [{
+                            "default": "!query.is_alive && !query.is_illager_captain"
+                        }
+                    ],
+                    "on_entry": [
+                        "@s dead"
+                    ]
+                }
+            }
+        }
+    }
+}
