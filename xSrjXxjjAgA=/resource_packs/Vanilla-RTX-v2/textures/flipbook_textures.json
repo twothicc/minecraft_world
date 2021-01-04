@@ -1,0 +1,7 @@
+[
+  {
+    "flipbook_texture": "textures/blocks/glazed_terracotta_magenta",
+    "atlas_tile": "magenta_glazed_terracotta",
+    "ticks_per_frame": 16
+  }
+]

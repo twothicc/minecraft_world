@@ -1,0 +1,20 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "The vanilla textures with raytracing!\nVersion: 2.5 | Clear Glass Addon\nBy Nicinator",
+        "name": "Vanilla RTX Clear Glass Addon",
+        "uuid": "fafdcd39-92bc-4c97-b31a-d62a969a87bb",
+        "version": [2, 5, 0],
+        "min_engine_version": [1, 15, 0]
+    },
+    "modules": [
+        {
+            "type": "resources",
+            "uuid": "08accb49-51e4-475d-954a-9651eaa6cbcd",
+            "version": [2, 5, 0]
+        }
+	],
+    "capabilities" : [
+            "raytraced"
+    ]			
+}

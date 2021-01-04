@@ -1,0 +1,28 @@
+//bridge-file-version: #3
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "korbon:lemon_leaves",
+			"register_to_creative_menu": true,
+			"is_experimental": false
+		},
+		"components": {
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "lemon_leaves",
+					"render_method": "opaque"
+				}
+			},
+			"minecraft:explosion_resistance": 0.2,
+			"minecraft:destroy_time": 0.2,
+			"minecraft:loot": "loot_tables/blocks/lemon_leaves.json",
+			"minecraft:flammable": {
+				"burn_odds": 100,
+				"flame_odds": 100
+			},
+			"minecraft:geometry": "geometry.lemon_leaves"
+		},
+		"events": {}
+	}
+}

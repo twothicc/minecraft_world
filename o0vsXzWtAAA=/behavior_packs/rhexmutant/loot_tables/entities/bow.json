@@ -1,1 +1,0 @@
-{"id":"1606809101954","name":"bow","pools":[{"rolls":1,"entries":[{"type":"item","weight":1,"name":"minecraft:bow","functions":[{"function":"set_count","count":{"min":1,"max":1}}]}]}]}

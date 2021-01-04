@@ -1,0 +1,25 @@
+//bridge-file-version: #0
+{
+	"format_version": "1.16.200",
+	"minecraft:block": {
+		"description": {
+			"identifier": "korbon:banana_block"
+		},
+		"components": {
+			"minecraft:destroy_time": 0.2,
+			"minecraft:flammable": {
+				"burn_odds": 0.2,
+				"flame_odds": 0.2
+			},
+			"minecraft:explosion_resistance": 0.2,
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "banana_block",
+					"render_method": "opaque"
+				}
+			},
+			"minecraft:geometry": "geometry.banana_block"
+		},
+		"events": {}
+	}
+}

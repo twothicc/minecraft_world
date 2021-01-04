@@ -1,0 +1,39 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "§7[v3] §fMore Structures by §eiKorbon - §2BP",
+		"description": "Spawns more structures in your world. v3",
+		"uuid": "1b0d4622-2bd2-42b6-921f-ccc52bfd23cd",
+		"version": [
+			1,
+			0,
+			0
+		],
+		"min_engine_version": [
+			1,
+			13,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "4bbf9ba7-4ba8-45e2-b190-4819753474db",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"version": [
+				1,
+				0,
+				3
+			],
+			"uuid": "f46194ae-e9bd-4268-8e3c-ecb69a51202b"
+		}
+	]
+}

@@ -1,0 +1,25 @@
+//bridge-file-version: #0
+{
+	"format_version": 1.1,
+	"minecraft:item": {
+		"description": {
+			"identifier": "korbon:lemon",
+			"category": "nature"
+		},
+		"components": {
+			"minecraft:use_duration": 32,
+			"minecraft:food": {
+				"nutrition": 2,
+				"saturation_modifier": "normal",
+				"effects": [
+					{
+						"name": "nausea",
+						"chance": 1,
+						"duration": 7,
+						"amplifier": 1
+					}
+				]
+			}
+		}
+	}
+}

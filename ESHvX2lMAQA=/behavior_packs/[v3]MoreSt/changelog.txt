@@ -1,0 +1,93 @@
+v1.9
+-added new structures, Desert Sphinx, Abandoned Castle, Wild wheat
+-added golden oranges
+-added golden orange recipe
+-added loot to Jungle Treehouse
+-added new mob, Decayed Zombie (spawns in Abandoned Castle)
+-tweaked spawn rates of some structures
+
+v2.0
+-added new structures, Underground Totem Room, Rare Large Ore Veins, 2 Desert Dungeons, 3 More Ruins, Tower and a varaint with a basement level, Swamp Willow Tree
+-tweaked spawn rates of some structures
+
+v2.1
+-added new structures, Mineshaft Entrance, Endermite Nest, Ruin Spawner, Wild Carrots, Wild Potatoes, Crashed Endship, Fishing Hut, Mesa Pyramid
+-removed file mistakingly put into add-on
+-tweaked spawn rates of some structures
+-large cacti will no longer spawn in Mesa biome
+
+v2.2
+-added new structures, Mesa Temple, Big Igloo, Phantom Spawner Island
+-tweaked spawn rates of some structures
+-Buffed "Mummy" health to 30 (was 20)
+-Buffed "Mummy" damage to 7 (was 5)
+-Reduced the Blindness effect duration caused by Mummies to 15 seconds (was 30)
+-Mummies will now drop paper and gold ingots on death
+-Dungeon Tower now has a closed top floor for spawners, to add difficulty.
+
+v2.3 (Small Halloweenish Update)
+-added new structures, Haunted House, Witch Cauldrons
+-added new mob, Ghost (spawns in Haunted Houses)
+-added a new food item - Ectoplasm (obtained by killing Ghosts)
+-tweaked spawn rates of some structures
+
+v2.4
+-added new structures, Mushroom House, Sea Turtle Nest, Slime Cave
+-increased Ghost attacking speed
+-added Dungeon Tower with closed top layer (Forgot to add in previous versions)
+-tweaked spawn rates of some structures
+-changed Ghost spawn egg texture
+
+v2.5
+-added new structures, Cave Storage Room, Excavation Site, Gaint Beehive, Pear Tree
+-added new food item - Pears (obtained by mining Pear Leaves)
+-added new block - Pear Leaves
+-updated texture for Apple Leaves
+-tweaked spawn rates of some structures
+-Ghosts will now spawn naturally in the world at night (Halloween only)
+
+v2.6
+-added new biome - Orchard
+-added new structures, Peach Tree, Lemon Tree, Broken Conduit Drowned Spawner, Enraged Underground Dungeon
+-added new food item - Peaches (obtained by mining Peach Leaves), Lemons (obtained by mining Lemon Leaves)
+-added new blocks - Peach Leaves, Lemon Leaves, Enraged Cobblestone
+-nerfed spawn rates of most structures to make them more rare
+-Ghosts no longer spawn naturally
+-Added new mob - Enraged Zombie (Spawns in Enraged Dungeons)
+
+v2.7
+-added new structures, Cherry Tree, Meteor Crash, Winter Cabin
+-added new food item - Cherries
+-added new block - Cherry Leaves
+-changed spawn egg texture for Enraged Zombie
+-tweaked spawn rates of some structures
+-lowered spawn rate of Slime Cave
+
+v2.8
+-updated all "Leaves" blocks behaviors
+-updated all "Leaves" blocks textures and geometry
+-"Leaves" blocks will now burn, spread and destroy when on fire
+-added new blocks - Mysterious Totem Block, Vase, Spike Trap(beta)
+-added saplings for custom trees
+-updated some structures
+-lowered spawn rates of some structures
+
+v2.9
+-added new structures, Pillager Pub, Festive Tree (December only)
+-added new block, Present (December only), Tombstone (Sometimes spawns incorrectly rotated in graveyards)
+-Ghosts will now spawn in graveyards
+-added tombstones to graveyards
+-tweaked spawn rates of some structures
+
+v3.0
+-added new structures, Lush Cave, Fortress Ruins
+-added new blocks, Ectoplasm Block, Candle, Candle with Wall Support
+-added new recipes, Ectoplasm Block, Candle, Candle with Wall Support
+-spike trap now plays sounds when stepped on and off
+-changed all textures for Leaf blocks back to pre v2.8 textures
+-changed render method for Leaf Blocks to "opaque" to prevent blocks from disappearing when at a distance
+-fixed Mummy name
+-fixed a bug preventing player from placing tombstone block after breaking it
+-removed Orchard biome temporarily
+-tweaked spawn rates of some structures
+

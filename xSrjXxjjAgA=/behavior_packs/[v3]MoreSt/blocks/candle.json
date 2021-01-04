@@ -1,0 +1,61 @@
+//bridge-file-version: #24
+{
+	"format_version": "1.16.200",
+	"minecraft:block": {
+		"description": {
+			"identifier": "korbon:candle"
+		},
+		"components": {
+			"minecraft:destroy_time": 0.1,
+			"minecraft:map_color": "#FFFCFC",
+			"minecraft:geometry": "geometry.candle",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "candle",
+					"render_method": "opaque"
+				}
+			},
+			"minecraft:pick_collision": {
+				"origin": [
+					-2,
+					0,
+					-2
+				],
+				"size": [
+					4,
+					9,
+					4
+				]
+			},
+			"minecraft:block_light_emission": 0.8,
+			"minecraft:ticking": {
+				"on_tick": {
+					"event": "flame",
+					"target": "self"
+				},
+				"range": [
+					0,
+					1
+				]
+			},
+			"minecraft:flammable": {
+				"burn_odds": 0,
+				"flame_odds": 0
+			},
+			"minecraft:breakonpush": true,
+			"minecraft:explosion_resistance": 0,
+			"minecraft:entity_collision": false,
+			"minecraft:loot": "loot_tables/blocks/candle.json"
+		},
+		"events": {
+			"flame": {
+				"run_command": {
+					"command": [
+						"particle minecraft:basic_flame_particle ~~0.2~",
+						"particle minecraft:basic_smoke_particle ~~0.35~"
+					]
+				}
+			}
+		}
+	}
+}

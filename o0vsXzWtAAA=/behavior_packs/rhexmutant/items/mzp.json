@@ -1,1 +1,0 @@
-{"format_version":"1.10","minecraft:item":{"description":{"identifier":"rhex:mzp"},"components":{"minecraft:use_duration":0,"minecraft:max_stack_size":1,"minecraft:hand_equipped":true,"minecraft:food":{"nutrition":0,"saturation_modifier":"low","can_always_eat":true},"minecraft:foil":false,"minecraft:max_damage":32}}}
